@@ -1,0 +1,84 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Taladro Percutor 800 W",
+      "categoria": "Herramientas",
+      "precio": 89.99,
+      "descripcion": "Taladro percutor de 800 W con velocidad variable y mandril de 13 mm. Ideal para concreto, madera y metal.",
+      "imagen": "https://loremflickr.com/320/240/drill"
+    },
+    {
+      "id": 2,
+      "nombre": "Juego de Destornilladores (6 pzs)",
+      "categoria": "Herramientas",
+      "precio": 14.5,
+      "descripcion": "Set de destornilladores punta plana y Phillips con mango ergonómico antideslizante.",
+      "imagen": "https://loremflickr.com/320/240/screwdriver"
+    },
+    {
+      "id": 3,
+      "nombre": "Martillo de Fibra 16 oz",
+      "categoria": "Herramientas",
+      "precio": 11.75,
+      "descripcion": "Martillo de carpintero con mango de fibra de vidrio y cabeza templada para mayor durabilidad.",
+      "imagen": "https://loremflickr.com/320/240/hammer"
+    },
+    {
+      "id": 4,
+      "nombre": "Cerradura de Seguridad Cilíndrica",
+      "categoria": "Ferretería",
+      "precio": 27.3,
+      "descripcion": "Cerradura de cilindro europeo con cinco llaves y sistema anti‑bumping.",
+      "imagen": "https://loremflickr.com/320/240/lock"
+    },
+    {
+      "id": 5,
+      "nombre": "Tornillos Multipropósito (100 uds)",
+      "categoria": "Ferretería",
+      "precio": 5.99,
+      "descripcion": "Tornillos galvanizados 4 × 40 mm con rosca profunda para madera y paneles de yeso.",
+      "imagen": "https://loremflickr.com/320/240/screws"
+    },
+    {
+      "id": 6,
+      "nombre": "Cable Eléctrico 2×1.5 mm² (25 m)",
+      "categoria": "Electricidad",
+      "precio": 18.4,
+      "descripcion": "Rollo de cable de cobre, cubierta PVC 450/750 V, apto para instalaciones residenciales.",
+      "imagen": "https://loremflickr.com/320/240/cable"
+    },
+    {
+      "id": 7,
+      "nombre": "Foco LED 15 W A60",
+      "categoria": "Electricidad",
+      "precio": 3.2,
+      "descripcion": "Bombillo LED luz blanca (6500 K) equivalente a 100 W incandescente, casquillo E27.",
+      "imagen": "https://loremflickr.com/320/240/lightbulb"
+    },
+    {
+      "id": 8,
+      "nombre": "Interruptor Doble Empotrable",
+      "categoria": "Electricidad",
+      "precio": 6.5,
+      "descripcion": "Interruptor doble de pared, placa termoplástica y bornes sin tornillo.",
+      "imagen": "https://loremflickr.com/320/240/switch"
+    },
+    {
+      "id": 9,
+      "nombre": "Pintura Látex Interior Blanco (4 L)",
+      "categoria": "Pintura",
+      "precio": 24.9,
+      "descripcion": "Pintura acrílica base agua con alto poder cubriente y bajo olor.",
+      "imagen": "https://loremflickr.com/320/240/paint"
+    },
+    {
+      "id": 10,
+      "nombre": "Rodillo de Pintura 9″ Microfibra",
+      "categoria": "Pintura",
+      "precio": 4.75,
+      "descripcion": "Rodillo de microfibra de 9″ para acabados lisos y semi‑lisos, mango ergonómico.",
+      "imagen": "https://loremflickr.com/320/240/roller"
+    }
+  ]
+}

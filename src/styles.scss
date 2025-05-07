@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  /* Utilidades */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 767px) {
+    .filtro-container {
+      width: 100%;
+    }
+  
+    select {
+      width: 100%;
+    }
+  }
+  
