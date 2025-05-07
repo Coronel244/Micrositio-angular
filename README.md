@@ -1,59 +1,101 @@
-# MicrositioAngular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+# Micrositio Angular
 
-## Development server
+Este proyecto es un micrositio de una sola página que muestra productos destacados con funcionalidades de filtrado por categoría y visualización de detalles.
 
-To start a local development server, run:
+## Instalación y Ejecución
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Clona el repositorio:
 
 ```bash
-ng generate component component-name
+git clone https://github.com/Coronel244/Micrositio-angular.git
+cd Micrositio-angular
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Instala las dependencias:
 
 ```bash
-ng generate --help
+npm install
 ```
 
-## Building
-
-To build the project run:
+Ejecuta el proyecto:
 
 ```bash
-ng build
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Esto compilará el TypeScript y lanzará un servidor local en http://localhost:3000
 
-## Running unit tests
+## Pruebas Unitarias
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Para ejecutar las pruebas unitarias:
 
 ```bash
-ng test
+npm test
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Para ejecutar las pruebas en modo watch (útil durante el desarrollo):
 
 ```bash
-ng e2e
+npm run test:watch
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Decisiones Técnicas
 
-## Additional Resources
+- **Carga de datos:** Utilicé `fetch` para cargar dinámicamente los productos desde el archivo JSON.
+- **Modal de detalles:** Implementé el elemento nativo `<dialog>` de HTML5 para el modal, lo que proporciona accesibilidad y funcionalidad de forma nativa.
+- **Filtrado:** Extraje las categorías únicas del JSON y las utilicé para poblar el selector de filtros.
+- **Diseño responsivo:** Utilicé CSS Grid con media queries para cambiar de 4 columnas a 1 columna en dispositivos móviles.
+- **TypeScript:** Implementé interfaces para tipar correctamente los datos y funciones.
+- **Accesibilidad:** Implementé mejoras de accesibilidad como atributos ARIA, navegación por teclado, y manejo adecuado del foco.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Mejoras de Accesibilidad
+
+- **Navegación por teclado:** Todos los elementos interactivos son accesibles mediante teclado.
+- **Atributos ARIA:** Implementados roles y atributos ARIA para mejorar la experiencia con lectores de pantalla.
+- **Manejo del foco:** El foco se gestiona correctamente al abrir y cerrar el modal.
+- **Contraste de colores:** Mejorado para cumplir con los estándares WCAG AA.
+- **Textos alternativos:** Todas las imágenes tienen textos alternativos descriptivos.
+- **Anuncios para lectores de pantalla:** Se notifican cambios importantes en el contenido.
+
+## Tiempo Invertido por Requisito
+
+### R-1 (Lista de productos):
+- Implementación de carga dinámica: 45m
+
+### R-2 (Filtro por categoría):
+- Extracción de categorías: 15m
+- Implementación del filtro: 15m
+
+### R-3 (Modal de detalle):
+- Diseño del modal: 30m
+- Implementación de la funcionalidad: 20m
+
+### R-4 (Diseño responsivo):
+- Media queries y ajustes: 45m
+
+### R-5 (Ejecución local):
+- Configuración de package.json y scripts: 30m
+
+### Extra (Accesibilidad): 2h
+- Implementación de atributos ARIA: 45m
+- Navegación por teclado: 30m
+- Manejo del foco: 30m
+- Mejoras de contraste y otros ajustes: 15m
+
+### Extra (Pruebas unitarias): 1h 30m
+- Configuración de Jest: 30m
+- Implementación de pruebas: 1h
+
+## Estructura del Proyecto
+
+- `index.html`: Estructura HTML principal
+- `styles.css`: Estilos CSS para la aplicación
+- `script.ts`: Lógica TypeScript para la funcionalidad
+- `producto.json`: Datos de los productos
+- `utils.ts`: Funciones de utilidad
+- `dist/`: Archivos JavaScript compilados
+- `tests/`: Pruebas unitarias
+- `package.json`: Configuración del proyecto
+- `tsconfig.json`: Configuración de TypeScript
+- `jest.config.js`: Configuración de Jest
